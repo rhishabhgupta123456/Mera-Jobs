@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="38dp"
+    android:height="38dp"
+    android:viewportWidth="38"
+    android:viewportHeight="38">
+
+  <!-- Background Circle -->
+  <path
+      android:pathData="M19,0L19,0A19,19 0,0 1,38 19L38,19A19,19 0,0 1,19 38L19,38A19,19 0,0 1,0 19L0,19A19,19 0,0 1,19 0z"
+      android:fillColor="#ffffff"
+      android:fillAlpha="0.1"/>
+
+  <!-- Icon Path (Shifted to center) -->
+  <path
+      android:strokeWidth="1"
+      android:strokeColor="#FFFFFF"
+      android:fillColor="#00000000"
+      android:pathData="M16.5,14.5C16.5,13.395 15.605,12.5 14.5,12.5C13.395,12.5 12.5,13.395 12.5,14.5C12.5,15.605 13.395,16.5 14.5,16.5C15.605,16.5 16.5,15.605 16.5,14.5ZM14.5,16.5V22.5M16.5,24.5C16.5,25.605 15.605,26.5 14.5,26.5C13.395,26.5 12.5,25.605 12.5,24.5C12.5,23.395 13.395,22.5 14.5,22.5M16.5,24.5C16.5,23.395 15.605,22.5 14.5,22.5M16.5,24.5H21.5C23.157,24.5 24.5,23.157 24.5,21.5V19.5M24.5,19.5C23.395,19.5 22.5,18.605 22.5,17.5C22.5,16.395 23.395,15.5 24.5,15.5C25.605,15.5 26.5,16.395 26.5,17.5C26.5,18.605 25.605,19.5 24.5,19.5Z" />
+</vector>

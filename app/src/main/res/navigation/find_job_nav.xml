@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_job_nav"
+    app:startDestination="@id/findJobHomeScreen">
+
+
+    <fragment
+        android:id="@+id/findJobHomeScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.FindJobHomeFragment"
+        android:label="Find Job Home Fragment"
+        tools:layout="@layout/fragment_find_job_home">
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+        <action
+            android:id="@+id/openCategoriesAllScreen"
+            app:destination="@id/categoriesAllScreen" />
+
+        <action
+            android:id="@+id/openIndustryFragment"
+            app:destination="@id/industryFragment" />
+
+        <action
+            android:id="@+id/openCompanyAllScreen"
+            app:destination="@id/companyAllScreen" />
+
+
+        <action
+            android:id="@+id/openFilterScreen"
+            app:destination="@id/filterScreen" />
+
+        <action
+            android:id="@+id/openJobDescription"
+            app:destination="@id/jobDescriptionScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchJobScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.SearchFragment"
+        android:label="Search Job Screen"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openMessageScreen"
+            app:destination="@id/messageInboxFragment" />
+
+        <action
+            android:id="@+id/openFilterScreen"
+            app:destination="@id/filterScreen" />
+
+        <action
+            android:id="@+id/openJobDescription"
+            app:destination="@id/jobDescriptionScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarkJobScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.SavedJobFragment"
+        android:label="BookMark Job Screen"
+        tools:layout="@layout/fragment_bookmark">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openJobDescription"
+            app:destination="@id/jobDescriptionScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/messageInboxFragment"
+        android:name="tech.merajobs.fragment.chatScreen.MessageInboxFragment"
+        android:label="Message Inbox Fragment"
+        tools:layout="@layout/fragment_message_inbox">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoriesAllScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.CategoryFragment"
+        android:label="Categories  Screen"
+        tools:layout="@layout/fragment_category">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/industryFragment"
+        android:name="tech.merajobs.fragment.findJobScreens.home.IndustryFragment"
+        android:label="Industry Fragment"
+        tools:layout="@layout/fragment_industry">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyAllScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.CompanyFragment"
+        android:label="Company All  Screen"
+        tools:layout="@layout/fragment_company">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.FilterFragment"
+        android:label="Filter Screen"
+        tools:layout="@layout/fragment_filter">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+        <action
+            android:id="@+id/openFilterScreen"
+            app:destination="@id/filterScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobDescriptionScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.home.JobDescriptionFragment"
+        android:label="Job Description Screen"
+        tools:layout="@layout/fragment_job_description">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openSearchJobScreen"
+            app:destination="@id/searchJobScreen" />
+
+
+        <action
+            android:id="@+id/openBookMarkScreen"
+            app:destination="@id/bookmarkJobScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/MyProfileScreen"
+        android:name="tech.merajobs.fragment.findJobScreens.myProfile.MyProfileFragment"
+        android:label="My Profile Screen"
+        tools:layout="@layout/fragment_my_profile">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+        <action
+            android:id="@+id/openMyProfileScreen"
+            app:destination="@id/MyProfileScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/settingScreen"
+        android:name="tech.merajobs.fragment.setting.SettingFragment"
+        android:label="Setting Screen"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+
+        <action
+            android:id="@+id/openAccountScreen"
+            app:destination="@id/accountScreen" />
+
+
+        <action
+            android:id="@+id/openUpdatePasswordScreen"
+            app:destination="@id/updatePasswordScreen" />
+
+        <action
+            android:id="@+id/openBlockedCompaniesScreen"
+            app:destination="@id/blockedCompaniesScreen" />
+
+        <action
+            android:id="@+id/openNotificationScreen"
+            app:destination="@id/notificationScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CMSFragment"
+        android:name="tech.merajobs.fragment.setting.CMSFragment"
+        android:label="CMS Fragment"
+        tools:layout="@layout/fragment_c_m_s">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/findJobHomeScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountScreen"
+        android:name="tech.merajobs.fragment.setting.AccountFragment"
+        android:label="Account Screen"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/updatePasswordScreen"
+        android:name="tech.merajobs.fragment.setting.UpdatePasswordFragment"
+        android:label="Update Password Screen"
+        tools:layout="@layout/fragment_update_password">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationScreen"
+        android:name="tech.merajobs.fragment.setting.NotificationFragment"
+        android:label="Notification Screen"
+        tools:layout="@layout/fragment_notification">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/blockedCompaniesScreen"
+        android:name="tech.merajobs.fragment.setting.BlockCompanyFragment"
+        android:label="Blocked Company Screen"
+        tools:layout="@layout/fragment_block_company">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+        <action
+            android:id="@+id/openAddBlockedCompaniesScreen"
+            app:destination="@id/addBlockedCompaniesScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBlockedCompaniesScreen"
+        android:name="tech.merajobs.fragment.setting.AddBlockCompanyFragment"
+        android:label="Add Blocked Company Screen"
+        tools:layout="@layout/fragment_add_block_company">
+
+        <action
+            android:id="@+id/openBlockedCompaniesScreen"
+            app:destination="@id/blockedCompaniesScreen" />
+
+
+    </fragment>
+
+
+</navigation>

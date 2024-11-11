@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardBox"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/unselectButton"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/semibold"
+        android:textColor="@color/shadowTextColor"
+        android:textSize="@dimen/_11sdp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:paddingVertical="@dimen/_3sdp"
+        android:paddingHorizontal="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:checked="true" />
+
+</androidx.cardview.widget.CardView>

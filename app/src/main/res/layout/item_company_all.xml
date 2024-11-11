@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tvCompanyImage"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_height="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/blackTextColor"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/tvCompanyJobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:fontFamily="@font/normal"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/shadowTextColor" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_job_nav"
+    app:startDestination="@id/addYourInformationScreen">
+
+
+    <fragment
+        android:id="@+id/addYourInformationScreen"
+        android:name="tech.merajobs.fragment.createCVScreens.AddYourInformationFragment"
+        android:label="Add your information Fragment"
+        tools:layout="@layout/fragment_add_your_information">
+
+
+        <action
+            android:id="@+id/openPersonalDetailsScreen"
+            app:destination="@id/personalDetailsScreen" />
+
+        <action
+            android:id="@+id/openEmploymentHistoryFragment"
+            app:destination="@id/employmentHistoryFragment" />
+
+        <action
+            android:id="@+id/openEducationFragment"
+            app:destination="@id/educationFragment" />
+
+        <action
+            android:id="@+id/openProfileSummaryFragment"
+            app:destination="@id/profileSummaryFragment" />
+
+        <action
+            android:id="@+id/openResumeHeadingFragment"
+            app:destination="@id/resumeHeadingFragment" />
+
+        <action
+            android:id="@+id/openSkillFragment"
+            app:destination="@id/skillFragment" />
+
+        <action
+            android:id="@+id/openlanguageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/openCertificateFragment"
+            app:destination="@id/certificateFragment" />
+
+        <action
+            android:id="@+id/openOnlineProfileFragment"
+            app:destination="@id/onlineProfileFragment" />
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileSummaryFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.ProfileSummaryFragment"
+        android:label="Profile Summary Fragment"
+        tools:layout="@layout/fragment_profile_summary">
+
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openPersonalDetailsScreen"
+            app:destination="@id/personalDetailsScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/personalDetailsScreen"
+        android:name="tech.merajobs.fragment.createCVScreens.PersonalDetailsFragment"
+        android:label="Personal Details Fragment"
+        tools:layout="@layout/fragment_personal_details">
+
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openPersonalDetailsScreen"
+            app:destination="@id/personalDetailsScreen" />
+
+        <action
+            android:id="@+id/openEmploymentHistoryFragment"
+            app:destination="@id/employmentHistoryFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/employmentHistoryFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.EmploymentHistoryFragment"
+        android:label="Employment History  Fragment"
+        tools:layout="@layout/fragment_employement_history">
+
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openEmploymentHistoryFragment"
+            app:destination="@id/employmentHistoryFragment" />
+
+        <action
+            android:id="@+id/openEducationFragment"
+            app:destination="@id/educationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.EducationFragment"
+        android:label="Education Fragment"
+        tools:layout="@layout/fragment_education">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openEducationFragment"
+            app:destination="@id/educationFragment" />
+
+        <action
+            android:id="@+id/openResumeHeadingFragment"
+            app:destination="@id/resumeHeadingFragment" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/resumeHeadingFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.ResumeHeadingFragment"
+        android:label="ResumeHeadingFragment"
+        tools:layout="@layout/fragment_resume_heading">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openSkillFragment"
+            app:destination="@id/skillFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/skillFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.SkillFragment"
+        android:label="Skill Fragment"
+        tools:layout="@layout/fragment_skiill">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openSkillFragment"
+            app:destination="@id/skillFragment" />
+
+        <action
+            android:id="@+id/openlanguageFragment"
+            app:destination="@id/languageFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.LanguageFragment"
+        android:label="Language Fragment"
+        tools:layout="@layout/fragment_language">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openlanguageFragment"
+            app:destination="@id/languageFragment" />
+
+        <action
+            android:id="@+id/openCertificateFragment"
+            app:destination="@id/certificateFragment" />
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/certificateFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.CertificateFragment"
+        android:label="Certificate Fragment"
+        tools:layout="@layout/fragment_certificate">
+
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openCertificateFragment"
+            app:destination="@id/certificateFragment" />
+
+        <action
+            android:id="@+id/openOnlineProfileFragment"
+            app:destination="@id/onlineProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/onlineProfileFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.OnlineProfileFragment"
+        android:label="Online Profile Fragment"
+        tools:layout="@layout/fragment_online_profile">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openOnlineProfileFragment"
+            app:destination="@id/onlineProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cVPreviewFragmentFragment"
+        android:name="tech.merajobs.fragment.createCVScreens.CVPreviewFragmentFragment"
+        android:label="CV Preview Fragment"
+        tools:layout="@layout/fragment_online_profile">
+
+        <action
+            android:id="@+id/openCVPreviewFragmentFragment"
+            app:destination="@id/cVPreviewFragmentFragment" />
+
+
+        <action
+            android:id="@+id/openAddYourInformationScreen"
+            app:destination="@id/addYourInformationScreen" />
+
+        <action
+            android:id="@+id/openPersonalDetailsScreen"
+            app:destination="@id/personalDetailsScreen" />
+
+        <action
+            android:id="@+id/openEmploymentHistoryFragment"
+            app:destination="@id/employmentHistoryFragment" />
+
+        <action
+            android:id="@+id/openEducationFragment"
+            app:destination="@id/educationFragment" />
+
+        <action
+            android:id="@+id/openProfileSummaryFragment"
+            app:destination="@id/profileSummaryFragment" />
+
+        <action
+            android:id="@+id/openResumeHeadingFragment"
+            app:destination="@id/resumeHeadingFragment" />
+
+        <action
+            android:id="@+id/openSkillFragment"
+            app:destination="@id/skillFragment" />
+
+        <action
+            android:id="@+id/openlanguageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/openCertificateFragment"
+            app:destination="@id/certificateFragment" />
+
+        <action
+            android:id="@+id/openOnlineProfileFragment"
+            app:destination="@id/onlineProfileFragment" />
+
+
+    </fragment>
+
+</navigation>

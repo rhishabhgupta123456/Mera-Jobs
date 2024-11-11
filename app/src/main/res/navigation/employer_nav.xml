@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_job_nav"
+    app:startDestination="@id/employerHomeFragment">
+
+
+    <fragment
+        android:id="@+id/employerHomeFragment"
+        android:name="tech.merajobs.fragment.employerScreen.home.EmployerHomeFragment"
+        android:label="Employer Home Fragment"
+        tools:layout="@layout/fragment_employer_home">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/MyProfileScreen"
+        android:name="tech.merajobs.fragment.employerScreen.profile.EmployerProfileFragment"
+        android:label="Employer Profile Fragment"
+        tools:layout="@layout/fragment_employer_profile">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/messageInboxFragment"
+        android:name="tech.merajobs.fragment.chatScreen.MessageInboxFragment"
+        android:label="Message Inbox Fragment"
+        tools:layout="@layout/fragment_message_inbox">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/postedJobFragment"
+        android:name="tech.merajobs.fragment.employerScreen.home.PostedJobFragment"
+        android:label="Posted Jo Fragment"
+        tools:layout="@layout/fragment_posted_job">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+        <action
+            android:id="@+id/openJobDescriptionPreview"
+            app:destination="@id/jobDescriptionScreenPreviewFragment" />
+
+
+    </fragment>
+
+  <fragment
+        android:id="@+id/jobDescriptionScreenPreviewFragment"
+        android:name="tech.merajobs.fragment.employerScreen.home.JobDescriptionScreenPreviewFragment"
+        android:label="Job Description Screen Preview Fragment"
+        tools:layout="@layout/fragment_job_description_screen_preview">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+      <action
+          android:id="@+id/openPostedJobFragment"
+          app:destination="@id/postedJobFragment" />
+
+  </fragment>
+
+
+    <fragment
+        android:id="@+id/branchFragment"
+        android:name="tech.merajobs.fragment.employerScreen.home.branch.BranchFragment"
+        android:label="Branch Fragment"
+        tools:layout="@layout/fragment_branch">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+        <action
+            android:id="@+id/openBranchFragment"
+            app:destination="@id/branchFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingScreen"
+        android:name="tech.merajobs.fragment.setting.SettingFragment"
+        android:label="Setting Screen"
+        tools:layout="@layout/fragment_setting">
+
+
+        <action
+            android:id="@+id/openAccountScreen"
+            app:destination="@id/accountScreen" />
+
+
+        <action
+            android:id="@+id/openUpdatePasswordScreen"
+            app:destination="@id/updatePasswordScreen" />
+
+        <action
+            android:id="@+id/openBlockedCompaniesScreen"
+            app:destination="@id/blockedCompaniesScreen" />
+
+        <action
+            android:id="@+id/openNotificationScreen"
+            app:destination="@id/notificationScreen" />
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CMSFragment"
+        android:name="tech.merajobs.fragment.setting.CMSFragment"
+        android:label="CMS Fragment"
+        tools:layout="@layout/fragment_c_m_s">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountScreen"
+        android:name="tech.merajobs.fragment.setting.AccountFragment"
+        android:label="Account Screen"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/updatePasswordScreen"
+        android:name="tech.merajobs.fragment.setting.UpdatePasswordFragment"
+        android:label="Update Password Screen"
+        tools:layout="@layout/fragment_update_password">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationScreen"
+        android:name="tech.merajobs.fragment.setting.NotificationFragment"
+        android:label="Notification Screen"
+        tools:layout="@layout/fragment_notification">
+
+        <action
+            android:id="@+id/openSettingScreen"
+            app:destination="@id/settingScreen" />
+
+
+    </fragment>
+</navigation>

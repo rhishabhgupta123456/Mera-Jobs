@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_3sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Education -1"
+        android:visibility="gone"
+        android:textColor="@color/blackTextColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileBox"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHead">
+
+
+        <ImageView
+            android:id="@+id/tvLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvDefalutImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:text="CS"
+            android:textSize="@dimen/_20sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/profileBox"
+        app:layout_constraintRight_toLeftOf="@id/btMenu"
+        app:layout_constraintTop_toBottomOf="@id/tvHead">
+
+        <TextView
+            android:id="@+id/tvQualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/tvCourceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvUniversityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvCourseDeatils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btMenu"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:src="@drawable/home_menu_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

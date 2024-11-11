@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/chooseSignInMethod">
+
+    <!--  Choose SignIn Method Screen  -->
+    <fragment
+        android:id="@+id/chooseSignInMethod"
+        android:name="tech.merajobs.fragment.authScreens.ChooseSignInMethodFragment"
+        android:label="Registration Page"
+        tools:layout="@layout/fragment_choose_sign_in_method">
+
+
+        <action
+            android:id="@+id/openSignInScreen"
+            app:destination="@id/signInScreen" />
+
+        <action
+            android:id="@+id/openSignUpScreen"
+            app:destination="@id/signUpScreen" />
+
+    </fragment>
+
+    <!--  SignIn  Screen  -->
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="tech.merajobs.fragment.authScreens.SignInFragment"
+        android:label="Sign In Page"
+        tools:layout="@layout/fragment_sign_in">
+
+
+        <action
+            android:id="@+id/openChooseSignInMethod"
+            app:destination="@id/chooseSignInMethod" />
+
+        <action
+            android:id="@+id/openResetPasswordScreen"
+            app:destination="@id/resetPasswordScreen" />
+
+        <action
+            android:id="@+id/openSignUpScreen"
+            app:destination="@id/signUpScreen" />
+
+
+    </fragment>
+
+    <!--  Reset Password  Screen  -->
+    <fragment
+        android:id="@+id/resetPasswordScreen"
+        android:name="tech.merajobs.fragment.authScreens.ResetPasswordFragment"
+        android:label="Reset Page"
+        tools:layout="@layout/fragment_reset_password">
+
+
+        <action
+            android:id="@+id/openSignInScreen"
+            app:destination="@id/signInScreen" />
+
+        <action
+            android:id="@+id/openCreatePasswordScreen"
+            app:destination="@id/createPasswordScreen" />
+
+
+    </fragment>
+
+    <!--  Verification  Screen  -->
+    <fragment
+        android:id="@+id/verificationScreen"
+        android:name="tech.merajobs.fragment.authScreens.VerificationFragment"
+        android:label="Verification Page"
+        tools:layout="@layout/fragment_verification">
+
+
+        <action
+            android:id="@+id/openSignUpScreen"
+            app:destination="@id/signUpScreen" />
+
+
+        <action
+            android:id="@+id/openSignInScreen"
+            app:destination="@id/signInScreen" />
+
+
+    </fragment>
+
+    <!--  Create Password  Screen  -->
+    <fragment
+        android:id="@+id/createPasswordScreen"
+        android:name="tech.merajobs.fragment.authScreens.CreateNewPasswordFragment"
+        android:label="Create Password  Page"
+        tools:layout="@layout/fragment_create_new_password">
+
+
+        <action
+            android:id="@+id/openSignInScreen"
+            app:destination="@id/signInScreen" />
+
+        <action
+            android:id="@+id/openResetPasswordScreen"
+            app:destination="@id/resetPasswordScreen" />
+
+    </fragment>
+
+
+    <!--  SignUp  Screen  -->
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="tech.merajobs.fragment.authScreens.SignUpFragment"
+        android:label="Sign Up Page"
+        tools:layout="@layout/fragment_sign_up">
+
+
+        <action
+            android:id="@+id/openChooseSignInMethod"
+            app:destination="@id/chooseSignInMethod" />
+
+        <action
+            android:id="@+id/openSignInScreen"
+            app:destination="@id/signInScreen" />
+
+        <action
+            android:id="@+id/openVerificationScreen"
+            app:destination="@id/verificationScreen" />
+
+        <action
+            android:id="@+id/openPrivacyAndPolicyScreen"
+            app:destination="@id/privacyAndPolicyScreen" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/privacyAndPolicyScreen"
+        android:name="tech.merajobs.fragment.authScreens.PrivacyAndPolicyFragment"
+        android:label="Privacy Policy Fragment"
+        tools:layout="@layout/fragment_privacy_and_policy">
+
+        <action
+            android:id="@+id/openSignUpScreen"
+            app:destination="@id/signUpScreen" />
+
+
+    </fragment>
+
+</navigation>

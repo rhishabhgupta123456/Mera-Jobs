@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_job_nav"
+    app:startDestination="@id/startPostJobFragment">
+
+
+    <fragment
+        android:id="@+id/startPostJobFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.StartPostJobFragment"
+        android:label="Start Post Job Fragment"
+        tools:layout="@layout/fragment_start_post_job">
+
+        <action
+            android:id="@+id/openDirectPostJobFragment"
+            app:destination="@+id/directPostJobFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/directPostJobFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.DirectPostJobFragment"
+        android:label="Direct Post Job Fragment"
+        tools:layout="@layout/fragment_direct_post_job">
+
+        <action
+            android:id="@+id/openStartPostJobFragment"
+            app:destination="@+id/startPostJobFragment" />
+
+        <action
+            android:id="@+id/openJobDetailFragment"
+            app:destination="@+id/jobDetailFragment" />
+
+        <action
+            android:id="@+id/openBranchFragment"
+            app:destination="@id/branchFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/branchFragment"
+        android:name="tech.merajobs.fragment.employerScreen.home.branch.BranchFragment"
+        android:label="Branch Fragment"
+        tools:layout="@layout/fragment_branch">
+
+        <action
+            android:id="@+id/openHomeScreen"
+            app:destination="@id/employerHomeFragment" />
+
+        <action
+            android:id="@+id/openBranchFragment"
+            app:destination="@id/branchFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobDetailFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.JobDetailFragment"
+        android:label="Job Detail Fragment"
+        tools:layout="@layout/fragment_direct_post_job">
+
+        <action
+            android:id="@+id/openDirectPostJobFragment"
+            app:destination="@+id/directPostJobFragment" />
+
+        <action
+            android:id="@+id/openEligibilityFragment"
+            app:destination="@+id/eligibilityFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/eligibilityFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.EligibilityFragment"
+        android:label="Eligibility Fragment"
+        tools:layout="@layout/fragment_eligibility">
+
+        <action
+            android:id="@+id/openJobDetailFragment"
+            app:destination="@+id/jobDetailFragment" />
+
+        <action
+            android:id="@+id/openPayRollAndWorkLocationFragment"
+            app:destination="@+id/payRollAndWorkLocationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/payRollAndWorkLocationFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.PayRollAndWorkLocationFragment"
+        android:label="PayRoll And Work Location Fragment"
+        tools:layout="@layout/fragment_pay_roll_and_work_location">
+
+        <action
+            android:id="@+id/openEligibilityFragment"
+            app:destination="@+id/eligibilityFragment" />
+        <action
+            android:id="@+id/openJobPreviewFragment"
+            app:destination="@+id/jobPreviewFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobPreviewFragment"
+        android:name="tech.merajobs.fragment.postJobsScreen.JobPreviewFragment"
+        android:label="PayRoll And Work Location Fragment"
+        tools:layout="@layout/fragment_job_priview">
+
+        <action
+            android:id="@+id/openPayRollAndWorkLocationFragment"
+            app:destination="@+id/payRollAndWorkLocationFragment" />
+
+    </fragment>
+
+
+</navigation>
